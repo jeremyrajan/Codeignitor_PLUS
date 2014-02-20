@@ -1,0 +1,45 @@
+/* 
+    Created on : Dec 24, 2013, 1:50:30 AM
+    Author     : jeremyrajan
+*/
+
+body
+{
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+#footer
+{
+    position:fixed;
+    bottom: 0;
+    left:0;
+    min-height: 30px;
+    padding:5px;
+    font-size:12px;
+    width:100%;
+    border-top:1px solid lightgrey;
+}
+
+#main-menu
+{
+    list-style:none;
+    float:right;
+}
+
+#main-menu li
+{
+    display:inline;
+    padding:3px;
+}
+
+.progress_container
+{
+    display:none;
+}
+
+#packages
+{
+    list-style-image:cross-fade;
+}
+
