@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Codeignitor plus by jeremyrajan</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jeremyrajan/Codeignitor_PLUS">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/jeremyrajan/Codeignitor_PLUS/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/jeremyrajan/Codeignitor_PLUS/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Codeignitor plus</h1>
+          <p>Codeignitor (HMVC) +Templates+ Foundation + jQuery</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jeremyrajan">jeremyrajan</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="codeignitor-plus" class="anchor" href="#codeignitor-plus"><span class="octicon octicon-link"></span></a>Codeignitor PLUS</h1>
+
+<p>I have been searching for articles online to implement templating for CI, but most of them them tend to be complicated to implement or confusing! :( . Finally, I arrived at this article <a href="http://net.tutsplus.com/tutorials/php/an-introduction-to-views-templating-in-codeigniter/">http://net.tutsplus.com/tutorials/php/an-introduction-to-views-templating-in-codeigniter/</a> which was a life saver.</p>
+
+<p>Hence, I implemented the same into the framework with a little bit of extra.</p>
+
+<hr><p>v0.2</p>
+
+<ul>
+<li>Added Foundation &amp; jQuery support</li>
+<li>Included modules functionality</li>
+<li>Basic template add</li>
+</ul><hr><p>v0.1</p>
+
+<ul>
+<li>Refer, application/config/autoload.php to enable 'template' library.</li>
+<li>Template dir resides in views/templates/</li>
+<li>Template lib in system/libraries/Template.php</li>
+<li>Public dir has index file, set virtual host accordingly!</li>
+</ul><hr><p>Displaying the template inside the controller:-</p>
+
+<pre>
+     $this-&gt;template-&gt;load('default', 'content', $data);
+</pre>
+
+<p>where, 'default' is the default/master template which resides in views/templates/</p><p>
+</p><p>'content' is the page/view you want to display inside the template. Location: views/content.php</p>
+
+<p>'data' is the variable/values you want to pass to the views/template</p>
+
+<p>Stay tuned! And hope it helps someone :)</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
